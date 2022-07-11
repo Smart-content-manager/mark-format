@@ -1,0 +1,15 @@
+<p>008/00-005 Ingreso del registro en la base de datos</p>
+
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input (dateChange)="addEvent($event)" [matDatepicker]="picker" matInput>
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle [for]="picker" matSuffix ></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <ng-container *ngIf="valueDate!=''">
+    <span> --> </span>
+    <span>{{this.valueDate}}</span>
+  </ng-container>
