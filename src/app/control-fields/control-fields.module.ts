@@ -13,6 +13,8 @@ import {MatSelectModule} from "@angular/material/select";
 import { TableCodeComponent } from './table-code/table-code.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatGridListModule} from "@angular/material/grid-list";
+import { DateInputComponent } from './date-input/date-input.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -21,7 +23,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
     Form008Component,
     Date0005Component,
     TypeDateComponent,
-    TableCodeComponent
+    TableCodeComponent,
+    DateInputComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +36,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
     MatNativeDateModule,
     MatSelectModule,
     MatTableModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule
   ],
   exports: [
         Form008Component

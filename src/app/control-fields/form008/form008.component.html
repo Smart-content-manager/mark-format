@@ -3,13 +3,18 @@
     <span>Campo de control 008</span>
   </mat-toolbar>
 
+  <app-date0005></app-date0005>
 
-  <mat-grid-list cols="2" rowHeight="200px">
+  <mat-grid-list cols="3" rowHeight="110px">
+
     <mat-grid-tile>
-      <app-date0005></app-date0005>
+      <app-type-date (typeOption)="changeTypeDate($event)"></app-type-date>
     </mat-grid-tile>
     <mat-grid-tile>
-      <app-type-date></app-type-date>
+      <app-date-input [position]="1" [typeDate]="typeDate" title="Fecha1 07-10"></app-date-input>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-date-input [position]="2" [typeDate]="typeDate" title="Fecha2 12-14"></app-date-input>
     </mat-grid-tile>
   </mat-grid-list>
 

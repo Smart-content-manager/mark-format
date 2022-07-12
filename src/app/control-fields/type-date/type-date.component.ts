@@ -9,7 +9,7 @@ export interface TypeOption {
   typeDate: TypeDate;
 }
 
-enum TypeDate {
+export enum TypeDate {
   AFTER_AC,
   FINISH_PUBLISH,
   DETAILS,
