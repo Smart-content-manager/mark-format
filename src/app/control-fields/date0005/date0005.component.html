@@ -1,6 +1,5 @@
-<p>008/00-005 Ingreso del registro en la base de datos</p>
-
 <div>
+  <p>00-05 Ingreso del registro en la base de datos</p>
   <mat-form-field appearance="fill">
     <mat-label>Choose a date</mat-label>
     <input (dateChange)="addEvent($event)" [matDatepicker]="picker" matInput>
@@ -13,3 +12,4 @@
     <span> --> </span>
     <span>{{this.valueDate}}</span>
   </ng-container>
+</div>
